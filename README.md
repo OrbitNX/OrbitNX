@@ -1,5 +1,5 @@
 <a href="https://github.com/kckarnige/orbitNX/releases">
-<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/orbitNX.png/">
+<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/orbitNX.png">
 </a>
 
 # IMPORTANT NOTES
