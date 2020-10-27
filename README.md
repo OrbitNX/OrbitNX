@@ -9,17 +9,10 @@
 
 # OrbitNX Usage Guide
 
-### Preparing (UPDATED VERSION)
+### Preparing
 - Select the 'Install APX Driver' option (If this option is not present, use the 'InstallAPX.bat' file)
 - If a Windows Security popup shows up, select "Yes"
 - Go through the set up
-
-### Preparing
-- [Install and launch Zadig](https://zadig.akeo.ie/)
-- Plug your Switch into your PC while it's in RCM mode
-- Select Options > List All Devices
-- Select the APX device and check which driver is installed for this specific device
-- If libusbK is not the current driver, install it
 
 ### Installation
 - [Download OrbitNX](https://github.com/kckarnige/orbitNX/releases)
