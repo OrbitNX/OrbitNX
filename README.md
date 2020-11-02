@@ -5,22 +5,19 @@
 ### USE THIS TOOL AT YOUR OWN RISK
 **OrbitNX relies on the PHP web shell exploit to boot payloads, this could be potentially dangerous.**
 
-## Preview
+## UI Preview
 
 <img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/preview.png">
 
-# OrbitNX Usage Guide
-
 ### Preparing
-- Select the 'Install APX Driver' option (If this option is not present, use the 'InstallAPX.bat' file)
+- First, [make sure your Switch is hackable](https://ismyswitchpatched.com/)
+- If your Switch is hackable, [download OrbitNX](https://github.com/kckarnige/orbitNX/releases)
+- Extract the ZIP file
+- Open orbitNX.exe (or SaturnNX.exe and on earlier releases)
+- Go to the tools tabe
+- Select the 'Install APX Driver' option
 - If a Windows Security popup shows up, select "Yes"
 - Go through the set up
-
-### Installation
-- [Download OrbitNX](https://github.com/kckarnige/orbitNX/releases)
-- Extract ZIP file
-- Open orbitNX.exe (or SaturnNX.exe and on earlier releases)
-- Click on the payload you'd like to run, and enjoy!
 
 #### Wanna see what I'm planning?
 [**Click here**](https://github.com/kckarnige/orbitNX/blob/master/plans.md)
