@@ -2,12 +2,12 @@
 <img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/orbitNX.png">
 </a>
 
-### USE THIS TOOL AT YOUR OWN RISK
-**OrbitNX relies on the PHP web shell exploit to boot payloads, this could be potentially dangerous.**
-
-## UI Preview
+### UI Preview
 
 <img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/preview.png">
+
+## USE THIS TOOL AT YOUR OWN RISK
+**OrbitNX relies on the PHP web shell exploit to boot payloads, this could be potentially dangerous.**
 
 ### Preparing
 - First, [make sure your Switch is hackable](https://ismyswitchpatched.com/)
