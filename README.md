@@ -11,7 +11,7 @@
 - If your Switch is hackable, [download OrbitNX](https://github.com/kckarnige/orbitNX/releases)
 - Extract the ZIP file
 - Open orbitNX.exe (or SaturnNX.exe and on earlier releases)
-- Go to the tools tabe
+- Go to the tools tab
 - Select the 'Install APX Driver' option
 - If a Windows Security popup shows up, select "Yes"
 - Go through the set up
