@@ -3,7 +3,7 @@
 
 ## Plans
 
-- [ ] Update Availability check via json and JavaScript
+- [ ] Update Availability check via JSON and JavaScript
 
 - [x] Learn JSON
 
