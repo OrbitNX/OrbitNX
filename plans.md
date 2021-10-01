@@ -1,6 +1,10 @@
 ## Ideas
-#### - Custom Themes using json
+#### Custom Themes using JSON
 
 ## Plans
-#### - Update Availability check via json and either PHP or Python
-#### - Learn json
+
+- [ ] Update Availability check via json and JavaScript
+
+- [x] Learn JSON
+
+- [ ] Learn JavaScript (learn to read JSON with JavaScript)
