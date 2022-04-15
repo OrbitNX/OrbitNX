@@ -4,7 +4,7 @@
 
 <img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/preview.png">
 
-# MOST OF THIS IS CURRENTLY OUTDATED! PLEASE USE ANOTHER PAYLOAD INJECTOR LIKE [TEGRARCMGUI](https://github.com/eliboa/TegraRcmGUI)!
+## Use [TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI), as this project is outdated. (Still uses fusee-primary payload)
 
 ### Preparing
 - First, [make sure your Switch is hackable](https://ismyswitchpatched.com/)
