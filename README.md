@@ -29,6 +29,6 @@
 
 [friedkeenan](https://github.com/friedkeenan) - [switch-logo-patcher](https://github.com/friedkeenan/switch-logo-patcher)
 
-[Freepik](https://www.flaticon.com/authors/freepik) - [All of the icons used](https://www.flaticon.com/authors/freepik)
+[Freepik](https://www.flaticon.com/authors/freepik) - [The icons used for the tabs](https://www.flaticon.com/authors/freepik)
 
 [UNKNOWN] - [Slimm Bat to Exe](https://www.softpedia.com/get/Programming/Other-Programming-Files/Slimm-Bat-to-Exe.shtml)
