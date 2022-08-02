@@ -13,4 +13,10 @@ button.payload {
     border-radius: 8px;
     border: none;
     outline: none;
+    transition: background 0.2s ease;
+}
+
+button.payload:hover {
+    background: #4d4d4d;
+    transition: background 0.2s ease;
 }
