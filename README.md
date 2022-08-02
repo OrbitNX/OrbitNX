@@ -1,8 +1,8 @@
 <a href="https://github.com/kckarnige/orbitNX/releases">
-<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/orbitNX.png">
+<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/OrbitNX/orbitNX.png">
 </a>
 
-<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/orbitNX/preview.png">
+<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/OrbitNX/preview.png">
 
 ## Use [TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI), as this project is outdated. (Still uses fusee-primary payload)
 
