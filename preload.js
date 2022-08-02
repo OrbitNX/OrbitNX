@@ -5,7 +5,7 @@ function injectNXPL (dir, payload) {
 `${dir}/${payload}`]);
 }
 function installPyReq () {
-    spawn('pip',["install", "pyusb"]);
+    spawn('pip',["install", "-r", "requirements.txt"]);
 }
 window.addEventListener('DOMContentLoaded', () => {
     document.getElementById("payload_1").innerText = payloadConfig.payloadName_1;

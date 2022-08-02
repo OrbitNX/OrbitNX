@@ -1,0 +1,3 @@
+pyusb
+Pillow
+ips.py
