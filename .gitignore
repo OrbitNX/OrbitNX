@@ -1,3 +1,4 @@
 
 node_modules
 package-lock.json
+fusee-launcher/__pycache__/
