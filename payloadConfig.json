@@ -1,0 +1,8 @@
+{
+    "payload_1": "hekate.bin",
+    "payloadName_1": "Hekate IPL",
+    "payloadDir_1": "./payloads",
+    "payload_2": "argon-nx.bin",
+    "payloadName_2": "ArgonNX",
+    "payloadDir_2": "./payloads"
+}

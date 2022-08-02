@@ -1,0 +1,16 @@
+html, body {
+    background: #2d2d2d;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 0; */
+}
+
+button.payload {
+    background: #3d3d3d;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}

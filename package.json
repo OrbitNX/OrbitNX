@@ -1,0 +1,49 @@
+{
+  "name": "orbitnx",
+  "version": "0.0.1",
+  "description": "An Electron application for injecting Nintendo Switch payloads",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "postinstall": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Dependencies Installed!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kckarnige/OrbitNX.git"
+  },
+  "keywords": [
+    "nintendo-switch",
+    "payload-injector",
+    "electron",
+    "tegrarcmgui",
+    "tegrarcm",
+    "javascript",
+    "python"
+  ],
+  "author": "KayoticCarnige",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/kckarnige/OrbitNX/issues"
+  },
+  "homepage": "https://github.com/kckarnige/OrbitNX#readme",
+  "devDependencies": {
+    "chalk-cli": "^5.0.0",
+    "electron": "^19.0.10",
+    "electron-builder": "^23.3.3"
+  },
+  "build": {
+    "nsis": {
+      "include": "build/installer.nsh"
+    },
+    "files": [
+      "!*",
+      "assets",
+      "node_modules",
+      "payloadConfig.json",
+      "package.json",
+      "LICENSE"
+    ],
+    "appId": "com.kckarnige.orbitnx",
+    "productName": "OrbitNX"
+  }
+}

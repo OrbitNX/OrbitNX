@@ -1,10 +1,8 @@
-## Ideas
-#### Custom Themes using JSON
+## Goals and Ideas
+> *Actually work on the mf rewrite* **[ Goal ]**
 
 ## Plans
 
 - [ ] Update Availability check via JSON and JavaScript
 
-- [x] Learn JSON
-
-- [ ] Learn JavaScript (learn to read JSON with JavaScript)
+- [ ] Add more customization and config options
