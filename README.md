@@ -1,6 +1,6 @@
-<h2>! THIS IS A HEAVY WIP, DON'T BE SURPRISED IF SOME SILLY SHIZ HAPPENS !</h2>
+<h2>! THIS IS A HEAVY WIP !</h2>
 <a href="#">
-<img align="center" src="https://kckarnige.is-a.dev/orbitNX/orbitnx-newlogo.png" width="512px">
+<img src="https://kckarnige.is-a.dev/orbitNX/orbitnx-newlogo.png" width="512px">
 </a>
 
 ### Screenshots
