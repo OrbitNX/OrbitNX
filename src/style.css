@@ -1,0 +1,59 @@
+html, body {
+    background: #2d2d2d;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin: 0; */
+}
+
+button#payload_inject {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: background 0.2s ease;
+}
+
+button#payload_inject:hover {
+    background: #4d4d4d;
+    transition: background 0.2s ease;
+}
+
+select#payload_select {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    transition: background 0.2s ease;
+}
+
+select#payload_select:hover {
+    background: #4d4d4d;
+    transition: background 0.2s ease;
+}
+
+#rcm_status {
+    background: rgb(255, 255, 0);
+    color: #2d2d2d;
+    text-align: center;
+    width: 75px;
+    border-radius: 4px;
+}
+#rcm_status:before {
+    content: "?";
+}
+
+[rcm_detected] #rcm_status {
+    background: rgb(0, 255, 72);
+}
+[rcm_detected] #rcm_status:before {
+    content: "✓";
+}
+
+[rcm_undetected] #rcm_status {
+    background: rgb(255, 0, 0);
+}
+[rcm_undetected] #rcm_status:before {
+    content: "X";
+}
