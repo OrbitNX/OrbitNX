@@ -5,4 +5,4 @@
 
 - [ ] Update Availability check via JSON and JavaScript
 
-- [ ] Add more customization and config options
+- [ ] Add more customization and config options [10%]
