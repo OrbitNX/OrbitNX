@@ -1,4 +1,5 @@
-<h2>! THIS IS A HEAVY WIP !</h2>
+<h2>| THIS IS A HEAVY WIP |</h2>
+<h2>| MAKE SURE PYTHON IS INSTALLED |</h2>
 <a href="#">
 <img src="https://kckarnige.is-a.dev/OrbitNX/orbitnx-newlogo.png" width="512px">
 </a>
