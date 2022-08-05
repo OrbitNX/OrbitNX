@@ -22,4 +22,10 @@
 ### Code and functionality 
 [Electron Framework](https://electronjs.org) | MIT License
 
+[Electron-Builder](https://electron.build) | MIT License
+
 [Qyriad/fusee-launcher](https://github.com/Qyriad/fusee-launcher) | GPL-2.0 License
+
+[node-usb/node-usb](https://www.npmjs.com/package/usb) | MIT License
+
+[chalk/chalk-cli](https://www.npmjs.com/package/chalk-cli) | MIT License
