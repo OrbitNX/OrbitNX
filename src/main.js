@@ -1,4 +1,5 @@
 const path = require('path')
+var spawn = require("child_process").spawn;
 const { app, BrowserWindow } = require('electron')
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -30,3 +31,4 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 });
+spawn('pip',["install", "-r", "requirements.txt"]);

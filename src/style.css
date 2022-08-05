@@ -5,18 +5,29 @@ html, body {
     /* margin: 0; */
 }
 
-button#payload_inject {
+button {
     background: #3d3d3d;
     color: #fff;
     border-radius: 8px;
     border: none;
     outline: none;
-    transition: background 0.2s ease;
+    transition: 0.1s ease;
 }
 
-button#payload_inject:hover {
+button:hover {
     background: #4d4d4d;
-    transition: background 0.2s ease;
+    transition: 0.1s ease;
+}
+
+[rcm_detected] button#payload_inject:active {
+    background: #22ffc2;
+    color: #2d2d2d;
+}
+
+[rcm_undetected] button#payload_inject {
+    transition: 0.1s ease;
+    opacity: .75;
+    pointer-events: none;
 }
 
 select#payload_select {
@@ -25,34 +36,35 @@ select#payload_select {
     border-radius: 8px;
     border: none;
     outline: none;
-    transition: background 0.2s ease;
+    transition: 0.1s ease;
 }
 
 select#payload_select:hover {
     background: #4d4d4d;
-    transition: background 0.2s ease;
+    transition: 0.1s ease;
 }
 
 #rcm_status {
-    background: rgb(255, 255, 0);
+    background: #ffff00;
     color: #2d2d2d;
     text-align: center;
     width: 75px;
     border-radius: 4px;
+    margin-top: 5px;
 }
 #rcm_status:before {
     content: "?";
 }
 
 [rcm_detected] #rcm_status {
-    background: rgb(0, 255, 72);
+    background: #00ff48;
 }
 [rcm_detected] #rcm_status:before {
     content: "✓";
 }
 
 [rcm_undetected] #rcm_status {
-    background: rgb(255, 0, 0);
+    background: #ff0000;
 }
 [rcm_undetected] #rcm_status:before {
     content: "X";

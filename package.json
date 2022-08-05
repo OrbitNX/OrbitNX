@@ -4,8 +4,10 @@
   "description": "An Electron application for injecting Nintendo Switch payloads",
   "main": "./src/main.js",
   "scripts": {
-    "test": "electron .",
-    "build": "electron-builder",
+    "test": "electron-builder --dir",
+    "pretest": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Building...",
+    "posttest": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Test Build Complete!",
+    "preinstall": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Installing Dependencies...",
     "postinstall": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Dependencies Installed!"
   },
   "repository": {
@@ -33,14 +35,16 @@
     "electron-builder": "^23.3.3"
   },
   "build": {
-    "asar": false,
-    "nsis": {
-      "include": "build/installer.nsh"
-    },
+    "asarUnpack": [
+      "./src/fusee-launcher",
+      "./src/payloadConfig.json",
+      "./src/payloads"
+    ],
     "files": [
       "!*",
       "node_modules",
       "src",
+      "!src/fusee-launcher/__pycache__",
       "package.json",
       "LICENSE"
     ],
