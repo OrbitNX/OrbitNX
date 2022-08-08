@@ -1,6 +1,6 @@
 <h2>| THIS IS A HEAVY WIP | MAKE SURE PYTHON IS INSTALLED |</h2>
 <a href="#">
-<img src="https://kckarnige.is-a.dev/OrbitNX/orbitnx-newlogo.png" width="512px">
+<img src="https://OrbitNX.github.io/orbitnx-newlogo.png" width="512px">
 </a>
 
 ### Screenshots
