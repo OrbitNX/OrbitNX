@@ -1,14 +1,14 @@
-<a href="https://github.com/kckarnige/orbitNX/releases">
-<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/OrbitNX/orbitNX.png">
+<a href="https://github.com/OrbitNX/OrbitNX/releases">
+<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://OrbitNX.github.io/orbitNX.png">
 </a>
 
-<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://kckarnige.github.io/OrbitNX/preview.png">
+<img style="display: block; margin-left: auto; margin-right: auto; text-align: center; margin: 0 auto;" src="https://OrbitNX.github.io/preview.png">
 
 ## Use [TegraRCMGUI](https://github.com/eliboa/TegraRcmGUI), as this project is outdated. (Still uses fusee-primary payload)
 
 ### Preparing
 - First, [make sure your Switch is hackable](https://ismyswitchpatched.com/)
-- If your Switch is hackable, [download OrbitNX](https://github.com/kckarnige/orbitNX/releases)
+- If your Switch is hackable, [download OrbitNX](https://github.com/OrbitNX/OrbitNX/releases)
 - Extract the ZIP file
 - Open orbitNX.exe
 - Go to the tools tab
@@ -17,7 +17,7 @@
 - Go through the set up
 
 #### Wanna see what I'm planning?
-[**Click here**](https://github.com/kckarnige/orbitNX/blob/master/plans.md)
+[**Click here**](https://github.com/OrbitNX/OrbitNX/blob/rewrite/plans.md)
 
 
 ## Credits
