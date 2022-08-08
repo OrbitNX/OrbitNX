@@ -18,7 +18,7 @@
 
 [Atmosphere-NX/Atmosphere](https://github.com/atmosphere-nx/atmosphere) | GPL-2.0 License
 
-[shchmue/Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM) (Mentioned, but not included)
+[shchmue/Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM) | GPL-2.0 License (Mentioned, but not included)
 
 ### Code and functionality 
 [Electron Framework](https://electronjs.org) | MIT License
