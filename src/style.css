@@ -24,7 +24,7 @@ button:hover {
     color: #2d2d2d;
 }
 
-[rcm_undetected] button#payload_inject {
+[rcm_undetected] button#payload_inject, button#payload_inject[no_payload] {
     transition: 0.1s ease;
     opacity: .75;
     pointer-events: none;

@@ -1,16 +1,21 @@
 {
     "payloadFile_1": "hekate.bin",
     "payloadName_1": "Hekate IPL",
-    "payloadDir_1": "../../app.asar.unpacked/src/payloads",
+    "payloadDir_1": "src/payloads",
     "plStartFromDrive_1": false,
 
     "payloadFile_2": "fusee.bin",
     "payloadName_2": "Atmosphere",
-    "payloadDir_2": "../../app.asar.unpacked/src/payloads",
+    "payloadDir_2": "src/payloads",
     "plStartFromDrive_2": false,
     
-    "payloadFile_3": "Lockpick_RCM.bin",
-    "payloadName_3": "Lockpick_RCM",
-    "payloadDir_3": "C:\\Users\\Example\\Downloads",
-    "plStartFromDrive_3": true
+    "payloadFile_3": "argon-nx.bin",
+    "payloadName_3": "ArgonNX",
+    "payloadDir_3": "src/payloads",
+    "plStartFromDrive_3": false,
+
+    "payloadFile_4": "Lockpick_RCM.bin",
+    "payloadName_4": "Lockpick_RCM",
+    "payloadDir_4": "C:\\Users\\Example\\Downloads",
+    "plStartFromDrive_4": true
 }
