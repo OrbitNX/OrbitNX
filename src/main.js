@@ -16,6 +16,7 @@ const createWindow = () => {
 };
 
 app.whenReady().then(() => {
+  spawn('pip',["install", "-r", "requirements.txt"]);
   createWindow()
 
   app.on('activate', () => {
@@ -31,4 +32,3 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit()
 });
-spawn('pip',["install", "-r", "requirements.txt"]);
