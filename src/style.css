@@ -12,6 +12,7 @@ button {
     border: none;
     outline: none;
     transition: 0.1s ease;
+    user-select: none;
 }
 
 button:hover {
@@ -46,7 +47,7 @@ select#payload_select:hover {
 
 #rcm_status {
     background: #ffff00;
-    color: #2d2d2d;
+    color: #000;
     text-align: center;
     width: 75px;
     border-radius: 4px;
