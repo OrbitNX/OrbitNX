@@ -5,7 +5,7 @@
     "plStartFromDrive_1": false,
 
     "payloadFile_2": "fusee.bin",
-    "payloadName_2": "Atmosphere",
+    "payloadName_2": "Atmosphère",
     "payloadDir_2": "payloads",
     "plStartFromDrive_2": false,
     
@@ -15,7 +15,7 @@
     "plStartFromDrive_3": false,
 
     "payloadFile_4": "Lockpick_RCM.bin",
-    "payloadName_4": "Lockpick_RCM",
+    "payloadName_4": "Lockpick RCM",
     "payloadDir_4": "C:\\Users\\Example\\Downloads",
     "plStartFromDrive_4": true
 }
