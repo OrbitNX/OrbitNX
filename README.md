@@ -8,6 +8,15 @@
 
 ``https://example.com/placeholder2.png``
 
+## Building from Source
+Open your Terminal
+
+Install dependencies - ``npm i``
+
+Test build - ``npm test``
+
+The built program should be in the ``/dist`` directory
+
 ## Project Resources
 
 ### Featured Payloads
