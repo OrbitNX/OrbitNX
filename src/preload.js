@@ -18,7 +18,7 @@ function injectNXPL(dir, payload, sDrive) {
 }
 var RCM_STATUS = "UNDETECTED";
 
-// See if device is connected | TODO: Check if device is in RCM mode
+// See if device is connected | TODO: Check if device is *actually* in RCM mode
 window.addEventListener('DOMContentLoaded', () => {
     setInterval(async () => {
         const device = await findByIds(0x0955, 0x7321);
