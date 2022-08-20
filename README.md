@@ -1,7 +1,11 @@
-<h2>| THIS IS A HEAVY WIP | MAKE SURE PYTHON IS INSTALLED |</h2>
+<h2 align="center">| THIS IS A HEAVY WIP | MAKE SURE PYTHON IS INSTALLED |</h2>
+</br>
+<p align="center">
 <a href="#">
 <img src="https://OrbitNX.github.io/orbitnx-newlogo.png" width="512px">
 </a>
+</p>
+<h1></h1>
 
 ### Screenshots
 ``https://example.com/placeholder1.png``
