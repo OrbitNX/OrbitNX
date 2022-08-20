@@ -5,9 +5,8 @@
 <img src="https://OrbitNX.github.io/orbitnx-newlogo.png" width="512px">
 </a>
 </p>
-</br>
 
-### Screenshots
+## Screenshots
 ``https://example.com/placeholder1.png``
 
 ``https://example.com/placeholder2.png``
