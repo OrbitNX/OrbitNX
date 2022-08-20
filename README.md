@@ -1,4 +1,4 @@
-<h2 align="center">| THIS IS A HEAVY WIP | MAKE SURE PYTHON IS INSTALLED |</h2>
+<h2 align="center">| THIS IS A HEAVY WIP | MAKE SURE PYTHON 3 IS INSTALLED |</h2>
 </br>
 <p align="center">
 <a href="#">
