@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // Set payload names
-if (payloadConfig.plStartFromDrive_1 == true) {
+if (payloadConfig.plStartFromMainDrive_1 == true) {
     fs.access(`${path.join(payloadConfig.payloadDir_1, payloadConfig.payloadFile_1)}`, (err) => {
         if (err) {
             document.getElementById("pl1").innerText = "No Payload"
@@ -70,7 +70,7 @@ if (payloadConfig.plStartFromDrive_1 == true) {
         };
     })
 }
-if (payloadConfig.plStartFromDrive_2 == true) {
+if (payloadConfig.plStartFromMainDrive_2 == true) {
     fs.access(`${path.join(payloadConfig.payloadDir_2, payloadConfig.payloadFile_2)}`, (err) => {
         if (err) {
             document.getElementById("pl2").innerText = "No Payload"
@@ -91,7 +91,7 @@ if (payloadConfig.plStartFromDrive_2 == true) {
         };
     })
 }
-if (payloadConfig.plStartFromDrive_3 == true) {
+if (payloadConfig.plStartFromMainDrive_3 == true) {
     fs.access(`${path.join(payloadConfig.payloadDir_3, payloadConfig.payloadFile_3)}`, (err) => {
         if (err) {
             document.getElementById("pl3").innerText = "No Payload"
@@ -112,7 +112,7 @@ if (payloadConfig.plStartFromDrive_3 == true) {
         };
     })
 }
-if (payloadConfig.plStartFromDrive_4 == true) {
+if (payloadConfig.plStartFromMainDrive_4 == true) {
     fs.access(`${path.join(payloadConfig.payloadDir_4, payloadConfig.payloadFile_4)}`, (err) => {
         if (err) {
             document.getElementById("pl4").innerText = "No Payload"
@@ -139,22 +139,22 @@ if (payloadConfig.plStartFromDrive_4 == true) {
         if (document.getElementById("payload_select").value == "pl1") {
             plDir = payloadConfig.payloadDir_1;
             plFile = payloadConfig.payloadFile_1;
-            plSDrive = payloadConfig.plStartFromDrive_1;
+            plSDrive = payloadConfig.plStartFromMainDrive_1;
         } else
             if (document.getElementById("payload_select").value == "pl2") {
                 plDir = payloadConfig.payloadDir_2;
                 plFile = payloadConfig.payloadFile_2;
-                plSDrive = payloadConfig.plStartFromDrive_2;
+                plSDrive = payloadConfig.plStartFromMainDrive_2;
             } else
                 if (document.getElementById("payload_select").value == "pl3") {
                     plDir = payloadConfig.payloadDir_3;
                     plFile = payloadConfig.payloadFile_3;
-                    plSDrive = payloadConfig.plStartFromDrive_3;
+                    plSDrive = payloadConfig.plStartFromMainDrive_3;
                 } else
                     if (document.getElementById("payload_select").value == "pl4") {
                         plDir = payloadConfig.payloadDir_4;
                         plFile = payloadConfig.payloadFile_4;
-                        plSDrive = payloadConfig.plStartFromDrive_4;
+                        plSDrive = payloadConfig.plStartFromMainDrive_4;
                     };
 
         // Check if the payload exists
