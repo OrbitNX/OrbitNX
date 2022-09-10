@@ -8,6 +8,7 @@ const createWindow = () => {
     autoHideMenuBar: true,
     title: "OrbitNX",
     webPreferences: {
+      sandbox: false,
       preload: path.join(__dirname, 'preload.js'),
       devTools: true
     }

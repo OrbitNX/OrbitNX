@@ -1,17 +1,25 @@
-const { shell } = require('electron')
-const fs = require('fs')
-const path = require('path')
+const { shell } = require('electron');
+const fs = require('fs');
+const path = require('path');
 const { findByIds } = require("usb");
-var spawn = require("child_process").spawn;
+var child_process = require("child_process");
+function getCommandLine() {
+    switch (process.platform) { 
+       case 'darwin' : return 'open';
+       case 'win32' : return 'start';
+       case 'win64' : return 'start';
+       default : return 'xdg-open';
+    }
+ };
 var payloadConfig = require("../../app.asar.unpacked/src/payloadConfig.json");
 
 // Code spaghetti, aka payload injection
 function injectNXPL(dir, payload, sDrive) {
     if (sDrive == true) {
-        spawn('python3', [`${path.join(__dirname, "..", "..", "/app.asar.unpacked/src/fusee-launcher/fusee-launcher.py")}`,
+        child_process.spawn('python3', [`${path.join(__dirname, "..", "..", "/app.asar.unpacked/src/fusee-launcher/fusee-launcher.py")}`,
         `${path.join(dir, payload)}`]);
     } else {
-        spawn('python3', [`${path.join(__dirname, "..", "..", "/app.asar.unpacked/src/fusee-launcher/fusee-launcher.py")}`,
+        child_process.spawn('python3', [`${path.join(__dirname, "..", "..", "/app.asar.unpacked/src/fusee-launcher/fusee-launcher.py")}`,
         `${path.join(__dirname, "..", "..", "/app.asar.unpacked/src", dir, payload)}`]);
     }
 
@@ -176,6 +184,6 @@ if (payloadConfig.plStartFromDrive_4 == true) {
 
     // Open config file location
     document.getElementById("payload_config").addEventListener("click", function () {
-        shell.showItemInFolder(`${path.join(__dirname, "..", "..", "/app.asar.unpacked/src/payloadConfig.json")}`);
+        child_process.exec(getCommandLine() + ' ' + path.join(__dirname, "..", "..", "/app.asar.unpacked/src/payloadConfig.json"));
     });
 });

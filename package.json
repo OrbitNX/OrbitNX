@@ -5,10 +5,9 @@
   "main": "./src/main.js",
   "scripts": {
     "test": "electron-builder --dir",
-    "pretest": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Building...",
-    "posttest": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Test Build Complete!",
-    "preinstall": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Installing Dependencies...",
-    "postinstall": "echo [OrbitNX]| chalk --stdin cyan inverse && echo - Dependencies Installed!"
+    "pretest": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Building...",
+    "posttest": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Test Build Complete!",
+    "postinstall": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Dependencies Installed!"
   },
   "repository": {
     "type": "git",
@@ -30,8 +29,8 @@
   },
   "homepage": "https://github.com/kckarnige/OrbitNX#readme",
   "devDependencies": {
-    "electron": "^19.0.10",
     "chalk-cli": "^5.0.0",
+    "electron": "^20.1.3",
     "electron-builder": "^23.3.3"
   },
   "build": {
@@ -52,6 +51,6 @@
     "productName": "OrbitNX"
   },
   "dependencies": {
-    "usb": "^2.5.0"
+    "usb": "^2.5.1"
   }
 }
