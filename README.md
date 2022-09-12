@@ -16,7 +16,7 @@ Open your Terminal
 
 Install dependencies - ``npm i``
 
-Test build - ``npm test``
+Compile the test build - ``npm test``
 
 The built program should be in the ``/dist`` directory
 
