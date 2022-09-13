@@ -4,6 +4,7 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* margin: 0; */
     user-select: none;
+    draggable: false;
 }
 
 button {
@@ -18,6 +19,21 @@ button {
 button:hover {
     background: #4d4d4d;
     transition: 0.1s ease;
+}
+a[href] {
+    color: #22ffc2;
+    transition: 0.2s ease;
+    text-decoration-line: none;
+}
+a[href]:hover {
+    color: #1fb389;
+    transition: 0.2s ease;
+    text-decoration-line: underline;
+}
+a[href]:active {
+    color: #7bffda;
+    transition: 0.2s ease;
+    text-decoration-line: none;
 }
 
 [rcm_detected] button#payload_inject:active {

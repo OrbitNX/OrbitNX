@@ -39,6 +39,10 @@ The built program should be in the ``/dist`` directory
 
 [Qyriad/fusee-launcher](https://github.com/Qyriad/fusee-launcher) | GPL-2.0 License
 
+[jQuery](https://jquery.com/) | MIT License
+
+[smoothState.js](https://github.com/miguel-perez/smoothState.js) | MIT License
+
 [node-usb/node-usb](https://www.npmjs.com/package/usb) | MIT License
 
 [chalk/chalk-cli](https://www.npmjs.com/package/chalk-cli) | MIT License

@@ -1,0 +1,50 @@
+/*
+ * Keyframes
+ */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+/** Basic styles for an animated element */
+#main {
+    animation-duration: 500ms;
+    transition: 500ms ease-in;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    opacity: 0
+}
+.page-load {
+    animation-name: fadeIn;
+    transition: 500ms ease-in;
+    opacity: 1
+}
+.page-unload {
+    animation-name: fadeOut;
+    transition: 500ms ease-in;
+    opacity: 1
+}
+#tab {
+    animation-name: none;
+    opacity: 1
+}
