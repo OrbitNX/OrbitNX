@@ -4,7 +4,22 @@ html, body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* margin: 0; */
     user-select: none;
-    draggable: false;
+}
+
+#main {
+    display: block;
+    position: absolute;
+    right: 50%;
+    float: left;
+    transform: translateX(50%);
+    margin-top: 10%;
+}
+#nav {
+    display: block;
+    position: absolute;
+    right: 50%;
+    float: left;
+    transform: translateX(50%);
 }
 
 button {
@@ -13,12 +28,12 @@ button {
     border-radius: 8px;
     border: none;
     outline: none;
-    transition: 0.1s ease;
+    transition: 0.1s ease-in;
 }
 
 button:hover {
     background: #4d4d4d;
-    transition: 0.1s ease;
+    transition: 0.1s ease-in;
 }
 a[href] {
     color: #22ffc2;
@@ -42,47 +57,69 @@ a[href]:active {
 }
 
 [rcm_undetected] button#payload_inject, button#payload_inject[no_payload] {
-    transition: 0.1s ease;
+    transition: 0.1s ease-in;
     opacity: .75;
     pointer-events: none;
+}
+button#payload_inject {
+    border-radius: 4px;
+    padding: 2px;
+    width: 70px;
 }
 
 select#payload_select {
     background: #3d3d3d;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 4px;
     border: none;
     outline: none;
-    transition: 0.1s ease;
+    transition: 0.1s ease-in;
+    text-align: right;
+    padding: 2px;
+    width: 100px;
 }
 
 select#payload_select:hover {
     background: #4d4d4d;
-    transition: 0.1s ease;
+    transition: 0.1s ease-in;
 }
 
 #rcm_status {
-    background: #ffff00;
-    color: #000;
+    background: #227aff;
+    color: #fff;
     text-align: center;
-    width: 75px;
+    width: 175px;
     border-radius: 4px;
     margin-top: 5px;
+    transition: 0.3s ease;
 }
 #rcm_status:before {
     content: "?";
 }
 
 [rcm_detected] #rcm_status {
-    background: #00ff48;
+    background: #22ffc2;
+    color: #000;
+    transition: 0.3s ease;
 }
 [rcm_detected] #rcm_status:before {
     content: "✓";
 }
 
 [rcm_undetected] #rcm_status {
-    background: #ff0000;
+    background: #ff2222;
+    color: #fff;
+    transition: 0.3s ease;
 }
 [rcm_undetected] #rcm_status:before {
     content: "X";
+}
+.currentTab {
+    color: #ff2222 !important;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+.selectedTab, .selectedTab:hover, .selectedTab {
+    color: #9f22ff !important;
+    transition: 0.3s ease;
 }

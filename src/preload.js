@@ -25,6 +25,8 @@ function injectNXPL(dir, payload, sDrive) {
 
 }
 var RCM_STATUS = "UNDETECTED";
+var notifState = 0;
+var rcmHasBeenConnected = false;
 
 // See if device is connected | TODO: Check if device is *actually* in RCM mode
 window.addEventListener('DOMContentLoaded', () => {
@@ -35,11 +37,22 @@ window.addEventListener('DOMContentLoaded', () => {
             RCM_STATUS = "DETECTED";
             document.body.setAttribute("rcm_detected", "");
             document.body.removeAttribute("rcm_undetected");
-            console.log(`Device Detected at Port ${device.portNumbers}`)
+            if (notifState == 1) {
+                notifState = 0;
+                console.log(`[ RCM ] Device Detected at Port ${device.portNumbers}`);
+                rcmHasBeenConnected = true;
+            };
         } else if (!device) {
             RCM_STATUS = "UNDETECTED";
             document.body.setAttribute("rcm_undetected", "");
             document.body.removeAttribute("rcm_detected");
+            if ((notifState == 0) && (rcmHasBeenConnected == true)) {
+                notifState = 1;
+                console.log(`[ RCM ] Device Disconnected`);
+            } else if (notifState == 0) {
+                notifState = 1;
+                console.log(`[ RCM ] Device Not Detected`);
+            };
         };
     }, 0);
 
