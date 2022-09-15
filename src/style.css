@@ -14,12 +14,25 @@ html, body {
     transform: translateX(50%);
     margin-top: 10%;
 }
-#nav {
-    display: block;
+nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
     position: absolute;
-    right: 50%;
+    left: 50%;
+    float: right;
+    transform: translateX(-50%);
+}
+nav > ul > li {
     float: left;
-    transform: translateX(50%);
+}
+nav > ul > li > a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
 }
 
 button {
