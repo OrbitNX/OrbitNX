@@ -1,8 +1,9 @@
 window.onload = () => {
     $('#main').addClass('page-load');
     $('a').attr('draggable', 'false');
+    document.getElementById("logoNav").setAttribute("title", `Version: ${orbit.version()}`);
 }
-$('#tab').click(() => {
+$('a').click(() => {
     var url = $(this).attr('href');
     if ($('#main').hasClass('page-load')) {
         $('#main').removeClass('page-load');

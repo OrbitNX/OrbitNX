@@ -8,13 +8,14 @@ const createWindow = () => {
     autoHideMenuBar: true,
     backgroundColor: "#2d2d2d",
     title: "OrbitNX",
+    maximizable: false,
     webPreferences: {
       sandbox: false,
       preload: path.join(__dirname, 'preload.js'),
       devTools: true
     }
   })
-  win.loadFile(path.join(__dirname, 'main.html'))
+  win.loadFile(path.join(__dirname, 'mainPage.html'))
 };
 
 app.whenReady().then(() => {

@@ -44,7 +44,3 @@
     transition: 500ms ease-in;
     opacity: 1
 }
-#tab {
-    animation-name: none;
-    opacity: 1
-}

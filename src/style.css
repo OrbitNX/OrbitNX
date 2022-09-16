@@ -14,15 +14,27 @@ html, body {
     transform: translateX(50%);
     margin-top: 10%;
 }
+.selectedTab > a {
+    color: #22ffc2 !important;
+    border-top: 2px solid #22ffc2;
+    border-bottom: 2px solid #22ffc2;
+    cursor: default;
+}
+nav {
+    margin-top: 14px;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 36px;
+}
 nav > ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    overflow: hidden;
     position: absolute;
-    left: 50%;
-    float: right;
-    transform: translateX(-50%);
+    right: 50%;
+    float: left;
+    transform: translateX(50%);
+    width: 52.3%;
 }
 nav > ul > li {
     float: left;
@@ -32,7 +44,17 @@ nav > ul > li > a {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1px 16px;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+nav > ul > li:hover > a {
+    color: #22ffc2;
+    transition: color 0.2s;
+}
+nav > ul > li > img {
+    padding: 1px 20px;
+    transform: translateY(-25%);
 }
 
 button {
@@ -48,17 +70,16 @@ button:hover {
     background: #4d4d4d;
     transition: 0.1s ease-in;
 }
-a[href] {
+a {
     color: #22ffc2;
     transition: 0.2s ease;
     text-decoration-line: none;
 }
-a[href]:hover {
+a:hover {
     color: #1fb389;
     transition: 0.2s ease;
-    text-decoration-line: underline;
 }
-a[href]:active {
+a:active {
     color: #7bffda;
     transition: 0.2s ease;
     text-decoration-line: none;
