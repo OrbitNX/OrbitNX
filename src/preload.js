@@ -196,10 +196,6 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
                 })
             }
-
-            if (document.getElementById("logoNav")) {
-                document.getElementById("logoNav").setAttribute("title", `OrbitNX ${require("../package.json").version}`);
-            };
         }, 0);
 
         // Inject payload button
@@ -215,5 +211,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 contextBridge.exposeInMainWorld("orbit", {
     version: () => require("../package.json").version,
+    buildStage: () => require("../package.json").buildStage,
     rcmStatus: () => RCM_STATUS
 });

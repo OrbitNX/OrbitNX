@@ -2,6 +2,7 @@
   "name": "orbitnx",
   "version": "0.0.1",
   "description": "An Electron application for injecting Nintendo Switch payloads",
+  "buildStage": "alpha",
   "main": "./src/main.js",
   "scripts": {
     "test": "electron-builder --dir",
