@@ -5,6 +5,8 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+    minWidth: 500,
+    maxWidth: 1200,
     autoHideMenuBar: true,
     backgroundColor: "#2d2d2d",
     title: "OrbitNX",

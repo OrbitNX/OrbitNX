@@ -3,23 +3,23 @@
     "payloadFile_1": "hekate.bin",
     "payloadName_1": "Hekate IPL",
     "payloadDir_1": "payloads",
-    "plStartFromMainDrive_1": false,
+    "StartFromDriveRoot_1": false,
 
     "[ Payload 2 Data ]": "",
     "payloadFile_2": "fusee.bin",
     "payloadName_2": "Atmosphère",
     "payloadDir_2": "payloads",
-    "plStartFromMainDrive_2": false,
+    "StartFromDriveRoot_2": false,
     
     "[ Payload 3 Data ]": "",
     "payloadFile_3": "argon-nx.bin",
     "payloadName_3": "ArgonNX",
     "payloadDir_3": "payloads",
-    "plStartFromMainDrive_3": false,
+    "StartFromDriveRoot_3": false,
 
     "[ Payload 4 Data ]": "",
     "payloadFile_4": "Lockpick_RCM.bin",
     "payloadName_4": "Lockpick RCM",
     "payloadDir_4": "C:\\Users\\Example\\Downloads",
-    "plStartFromMainDrive_4": true
+    "StartFromDriveRoot_4": true
 }

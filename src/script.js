@@ -16,7 +16,7 @@ window.onload = () => {
         }
     }
     
-    document.getElementById("logoNav").setAttribute("title", `OrbitNX ${buildStage() + ": " + orbit.version()}`);
+    document.getElementById("logoNav").setAttribute("title", `OrbitNX ${buildStage() + orbit.version()}`);
 }
 $('a[href]').click(() => {
     var url = $(this).attr('href');

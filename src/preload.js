@@ -28,8 +28,8 @@ var RCM_STATUS = "Undetected";
 var notifState = 0;
 var rcmHasBeenConnected = false;
 
-// See if device is connected
 window.addEventListener('DOMContentLoaded', () => {
+    // Payload Injector
     if (window.location.href.indexOf("mainPage.html") > -1) {
         setInterval(async () => {
             const device = await findByIds(0x0955, 0x7321);
@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         // Set payload names
-        if (payloadConfig.plStartFromMainDrive_1 == true) {
+        if (payloadConfig.StartFromDriveRoot_1 == true) {
             fs.access(`${path.join(payloadConfig.payloadDir_1, payloadConfig.payloadFile_1)}`, (err) => {
                 var payloadSel = document.getElementById("pl1");
                 if (err) {
@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 };
             })
         }
-        if (payloadConfig.plStartFromMainDrive_2 == true) {
+        if (payloadConfig.StartFromDriveRoot_2 == true) {
             fs.access(`${path.join(payloadConfig.payloadDir_2, payloadConfig.payloadFile_2)}`, (err) => {
                 var payloadSel = document.getElementById("pl2");
                 if (err) {
@@ -108,7 +108,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 };
             })
         }
-        if (payloadConfig.plStartFromMainDrive_3 == true) {
+        if (payloadConfig.StartFromDriveRoot_3 == true) {
             fs.access(`${path.join(payloadConfig.payloadDir_3, payloadConfig.payloadFile_3)}`, (err) => {
                 var payloadSel = document.getElementById("pl3");
                 if (err) {
@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 };
             })
         }
-        if (payloadConfig.plStartFromMainDrive_4 == true) {
+        if (payloadConfig.StartFromDriveRoot_4 == true) {
             fs.access(`${path.join(payloadConfig.payloadDir_4, payloadConfig.payloadFile_4)}`, (err) => {
                 var payloadSel = document.getElementById("pl4");
                 if (err) {
@@ -160,22 +160,22 @@ window.addEventListener('DOMContentLoaded', () => {
             if (document.getElementById("payload_select").value == "pl1") {
                 plDir = payloadConfig.payloadDir_1;
                 plFile = payloadConfig.payloadFile_1;
-                plSDrive = payloadConfig.plStartFromMainDrive_1;
+                plSDrive = payloadConfig.StartFromDriveRoot_1;
             } else
                 if (document.getElementById("payload_select").value == "pl2") {
                     plDir = payloadConfig.payloadDir_2;
                     plFile = payloadConfig.payloadFile_2;
-                    plSDrive = payloadConfig.plStartFromMainDrive_2;
+                    plSDrive = payloadConfig.StartFromDriveRoot_2;
                 } else
                     if (document.getElementById("payload_select").value == "pl3") {
                         plDir = payloadConfig.payloadDir_3;
                         plFile = payloadConfig.payloadFile_3;
-                        plSDrive = payloadConfig.plStartFromMainDrive_3;
+                        plSDrive = payloadConfig.StartFromDriveRoot_3;
                     } else
                         if (document.getElementById("payload_select").value == "pl4") {
                             plDir = payloadConfig.payloadDir_4;
                             plFile = payloadConfig.payloadFile_4;
-                            plSDrive = payloadConfig.plStartFromMainDrive_4;
+                            plSDrive = payloadConfig.StartFromDriveRoot_4;
                         };
 
             // Check if the payload exists
