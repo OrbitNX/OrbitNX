@@ -5,6 +5,8 @@
   "buildStage": "alpha",
   "main": "./src/main.js",
   "scripts": {
+    "start": "electron .",
+    "prestart": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Starting...",
     "test": "electron-builder --dir",
     "pretest": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Building...",
     "posttest": "echo [ OrbitNX ]| chalk --stdin cyan inverse && echo - Test Build Complete!",
