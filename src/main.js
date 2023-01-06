@@ -17,7 +17,7 @@ const createWindow = () => {
       devTools: true
     }
   })
-  win.loadFile(path.join(__dirname, 'mainPage.html'))
+  win.loadFile(path.join(__dirname, 'frontend/mainPage.html'))
 };
 
 app.whenReady().then(() => {

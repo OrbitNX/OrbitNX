@@ -15,21 +15,16 @@ window.onload = () => {
             return ""
         }
     }
-    
     if (orbit.buildStage() !== null) {
         document.getElementById("versionInfo").innerHTML = `<span>${buildStage() + orbit.version()}</span>`;
     }
 }
 $('a[href]').click(() => {
     var url = $(this).attr('href');
-    if ($('#main').hasClass('page-load')) {
         $('#main').removeClass('page-load');
         $('#main').addClass('page-unload');
         setTimeout(() => {
             window.location.href = url;
         }, 800);
-    } else {
-        return;
-    }
 });
 
