@@ -8,25 +8,35 @@
 </head>
 
 <body>
-  <nav>
+  <div id="nav">
     <ul>
-      <li id="logoNav"><img width="50px" src="assets/icon.svg" /></li>
+      <div id="logoNav">
+        <img width="50px" src="assets/iconLogo.png" />
+      </div>
+      <li></li>
+      <div id="rcm_status">
+        <span> RCM</span>
+      </div>
+      <li>
+        <div id="funnyLine"></div>
+      </li>
       <li class="selectedTab" id="injectNav"><a>Injector</a></li>
       <li id="patchNav tab"><a href="./toolsPage.html">Tools</a></li>
       <li id="configNav tab"><a id="tab" href="./configPage.html">Config</a></li>
       <li id="settingsNav tab"><a href="./settingsPage.html">Settings</a></li>
     </ul>
-  </nav>
+  </div>
   <div id="main">
-    <select id="payload_select">
-      <option id="pl1" value="pl1"></option>
-      <option id="pl2" value="pl2"></option>
-      <option id="pl3" value="pl3"></option>
-      <option id="pl4" value="pl4"></option>
-    </select>
-    <button id="payload_inject">Inject!</button><br>
-    <div id="rcm_status"> RCM</div>
-    <button id="payload_config">Payload Config</button><br>
+    <div id="content">
+      <select id="payload_select">
+        <option id="pl1" value="pl1"></option>
+        <option id="pl2" value="pl2"></option>
+        <option id="pl3" value="pl3"></option>
+        <option id="pl4" value="pl4"></option>
+      </select>
+      <button id="payload_inject">Inject!</button><br>
+      <button id="payload_config">Payload Config</button>
+    </div>
   </div>
   <script src="./jquery-3.6.0.min.js"></script>
   <script src="./jquery.smoothState.min.js"></script>

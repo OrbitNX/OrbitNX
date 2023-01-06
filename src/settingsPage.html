@@ -8,22 +8,33 @@
 </head>
 
 <body>
-  <nav>
+  <div id="nav">
     <ul>
-      <li id="logoNav"><img width="50px" src="assets/icon.svg" /></li>
-      <li id="injectNav tab"><a href="./mainPage.html">Injector</a></li>
+      <div id="logoNav">
+        <img width="50px" src="assets/iconLogo.png" />
+      </div>
+      <li></li>
+      <div id="rcm_status">
+        <span> RCM</span>
+      </div>
+      <li>
+        <div id="funnyLine"></div>
+      </li>
+      <li id="injectNav"><a href="./mainPage.html">Injector</a></li>
       <li id="patchNav tab"><a href="./toolsPage.html">Tools</a></li>
-      <li id="configNav tab"><a href="./configPage.html">Config</a></li>
-      <li class="selectedTab" id="settingsNav"><a>Settings</a></li>
+      <li id="configNav tab"><a id="tab" href="./configPage.html">Config</a></li>
+      <li class="selectedTab" id="settingsNav tab"><a>Settings</a></li>
     </ul>
-  </nav>
+  </div>
   <div id="main">
-    <div id="rcm_status"> RCM</div>
+    <div id="content">
+      <p>Placeholder</p>
+    </div>
   </div>
   <script src="./jquery-3.6.0.min.js"></script>
   <script src="./jquery.smoothState.min.js"></script>
   <script src="./script.js"></script>
-  <script src="./settingsScript.js"></script>
+  <script src="./mainScript.js"></script>
 </body>
 
 </html>

@@ -28,19 +28,19 @@
  */
 /** Basic styles for an animated element */
 #main {
-    animation-duration: 500ms;
-    transition: 500ms ease-in;
+    animation-duration: 0.5s;
+    transition: 0.5s ease-in;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
     opacity: 0
 }
 .page-load {
     animation-name: fadeIn;
-    transition: 500ms ease-in;
+    transition: 0.5s ease-in;
     opacity: 1
 }
 .page-unload {
     animation-name: fadeOut;
-    transition: 500ms ease-in;
+    transition: 0.5s ease-in;
     opacity: 1
 }

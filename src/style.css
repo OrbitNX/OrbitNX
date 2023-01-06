@@ -1,161 +1,177 @@
+@charset "UTF-8";
 html, body {
-    background: #2d2d2d;
-    color: #fff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* margin: 0; */
-    user-select: none;
+  background: #2d2d2d;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #main {
-    display: block;
-    position: absolute;
-    right: 50%;
-    float: left;
-    transform: translateX(50%);
-    margin-top: 10%;
+  display: block;
+  overflow: hidden;
 }
+#main #content {
+  margin: 8px;
+}
+
 .selectedTab > a {
-    color: #22ffc2 !important;
-    border-top: 2px solid #22ffc2;
-    border-bottom: 2px solid #22ffc2;
-    cursor: default;
+  color: #22ffc2 !important;
+  border-left: 2px solid #22ffc2 !important;
+  cursor: default;
+  transition: 0.5s;
 }
-nav {
-    margin-top: 14px;
-    width: 100%;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 36px;
-    white-space: nowrap;
+
+#nav {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100vh;
+  background-color: #1d1d1d;
+  white-space: nowrap;
+  float: left;
 }
-nav > ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    position: absolute;
-    left: 50%;
-    float: right;
-    transform: translateX(-50%);
-    width: 52.3%;
-    inline-size: max-content;
+#nav #logoNav {
+  text-align: center;
 }
-nav > ul > li {
-    float: left;
+#nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-nav > ul > li > a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 1px 16px;
-    transition: color 0.2s;
-    cursor: pointer;
+#nav > ul > li #funnyLine {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2078431373);
+  width: 85px;
+  height: 38px;
+  transform: translateX(-4px);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  display: block;
 }
-nav > ul > li:hover > a {
-    color: #22ffc2;
-    transition: color 0.2s;
+#nav > ul > li > a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+  padding: 1px 8px;
+  padding-bottom: 4px;
+  border-left: 1px solid transparent;
+  transition: 0.2s;
+  cursor: pointer;
 }
-nav > ul > li > img {
-    padding: 1px 20px;
-    transform: translateY(-25%);
+#nav > ul > li:hover > a {
+  border-left: 2px solid rgba(34, 255, 192, 0.5019607843);
+  transition: 0.2s;
 }
 
 button {
-    background: #3d3d3d;
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    transition: 0.1s ease-in;
+  background: #3d3d3d;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin: 2px;
+  transition: 0.1s ease-in;
+}
+button:hover {
+  background: #4d4d4d;
+  transition: 0.1s ease-in;
 }
 
-button:hover {
-    background: #4d4d4d;
-    transition: 0.1s ease-in;
-}
 a {
-    color: #22ffc2;
-    transition: 0.2s ease;
-    text-decoration-line: none;
+  color: #22ffc2;
+  transition: 0.2s ease;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 a:hover {
-    color: #1fb389;
-    transition: 0.2s ease;
+  color: #1fb389;
+  transition: 0.2s ease;
 }
 a:active {
-    color: #7bffda;
-    transition: 0.2s ease;
-    text-decoration-line: none;
+  color: #7bffda;
+  transition: 0.2s ease;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 [rcm_detected] button#payload_inject:active {
-    background: #22ffc2;
-    color: #2d2d2d;
+  background: #22ffc2;
+  color: #2d2d2d;
 }
 
 [rcm_undetected] button#payload_inject, button#payload_inject[no_payload] {
-    transition: 0.1s ease-in;
-    opacity: .75;
-    pointer-events: none;
+  transition: 0.1s ease-in;
+  opacity: 0.75;
+  pointer-events: none;
 }
+
 button#payload_inject {
-    border-radius: 4px;
-    padding: 2px;
-    width: 70px;
+  border-radius: 4px;
+  padding: 2px;
+  width: 65px;
+}
+
+button#payload_config {
+  border-radius: 4px;
+  padding: 2px;
+  width: 116px;
 }
 
 select#payload_select {
-    background: #3d3d3d;
-    color: #fff;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    transition: 0.1s ease-in;
-    text-align: right;
-    padding: 2px;
-    width: 100px;
+  background: #3d3d3d;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  transition: 0.1s ease-in;
+  text-align: right;
+  padding: 2px;
+  width: 100px;
 }
-
 select#payload_select:hover {
-    background: #4d4d4d;
-    transition: 0.1s ease-in;
+  background: #4d4d4d;
+  transition: 0.1s ease-in;
 }
 
 #rcm_status {
-    background: #227aff;
-    color: #fff;
-    text-align: center;
-    width: 175px;
-    border-radius: 4px;
-    margin-top: 5px;
-    transition: 0.3s ease;
+  --statusColor: 34, 122, 255;
+  background: rgba(var(--statusColor), 0.25);
+  color: rgb(var(--statusColor));
+  text-align: center;
+  width: 75px;
+  height: 26px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-left: rgb(var(--statusColor)) solid 2px;
+  transition: 0.3s ease;
+  margin-top: 4px;
+  display: inline;
+  float: left;
 }
-#rcm_status:before {
-    content: "?";
+#rcm_status > span {
+  line-height: 26px;
+}
+#rcm_status > span:before {
+  content: "?";
 }
 
 [rcm_detected] #rcm_status {
-    background: #22ffc2;
-    color: #000;
-    transition: 0.3s ease;
+  --statusColor: 34, 255, 194;
+  transition: 0.3s ease;
 }
-[rcm_detected] #rcm_status:before {
-    content: "✓";
+[rcm_detected] #rcm_status > span:before {
+  content: "✔";
 }
 
 [rcm_undetected] #rcm_status {
-    background: #ff2222;
-    color: #fff;
-    transition: 0.3s ease;
+  --statusColor: 255, 34, 34;
+  transition: 0.3s ease;
 }
-[rcm_undetected] #rcm_status:before {
-    content: "X";
-}
-.currentTab {
-    color: #ff2222 !important;
-    transition: 0.3s ease;
-    pointer-events: none;
-}
-.selectedTab, .selectedTab:hover, .selectedTab {
-    color: #9f22ff !important;
-    transition: 0.3s ease;
-}
+[rcm_undetected] #rcm_status > span:before {
+  content: "✖";
+}/*# sourceMappingURL=style.css.map */

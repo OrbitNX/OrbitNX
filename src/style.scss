@@ -1,0 +1,172 @@
+html, body {
+    background: #2d2d2d;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    user-select: none;
+}
+
+#main {
+    display: block;
+    overflow: hidden;
+    #content {
+        margin: 8px;
+    }
+}
+
+.selectedTab {
+    >a {
+        color: #22ffc2 !important;
+        border-left: 2px solid #22ffc2 !important;
+        cursor: default;
+        transition: 0.5s;
+    }
+}
+
+#nav {
+    display: block;
+    width: max-content;
+    height: 100vh;
+    background-color: #1d1d1d;
+    white-space: nowrap;
+    float:left;
+    #logoNav {
+        text-align: center;
+    }
+    >ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        >li {
+            #funnyLine {
+                border-bottom: 2px solid #ffffff35;
+                width: 85px;
+                height: 38px;
+                transform: translateX(-4px);
+                margin-top: 4px;
+                margin-bottom: 10px;
+                display: block;
+            }
+            > a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                text-align: left;
+                padding: 1px 8px;
+                padding-bottom: 4px;
+                border-left: 1px solid transparent;
+                transition: 0.2s;
+                cursor: pointer;
+            }
+            &:hover > a {
+                border-left: 2px solid #22ffc080;
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+button {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin: 2px;
+    transition: 0.1s ease-in;
+    &:hover {
+        background: #4d4d4d;
+        transition: 0.1s ease-in;
+    }
+}
+
+a {
+    color: #22ffc2;
+    transition: 0.2s ease;
+    text-decoration-line: none;
+    &:hover {
+        color: #1fb389;
+        transition: 0.2s ease;
+    }
+    &:active {
+        color: #7bffda;
+        transition: 0.2s ease;
+        text-decoration-line: none;
+    }
+}
+
+[rcm_detected] button#payload_inject:active {
+    background: #22ffc2;
+    color: #2d2d2d;
+}
+
+[rcm_undetected] button#payload_inject, button#payload_inject[no_payload] {
+    transition: 0.1s ease-in;
+    opacity: .75;
+    pointer-events: none;
+}
+
+button#payload_inject {
+    border-radius: 4px;
+    padding: 2px;
+    width: 65px;
+}
+button#payload_config {
+    border-radius: 4px;
+    padding: 2px;
+    width: 116px;
+}
+
+select#payload_select {
+    background: #3d3d3d;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    transition: 0.1s ease-in;
+    text-align: right;
+    padding: 2px;
+    width: 100px;
+    &:hover {
+        background: #4d4d4d;
+        transition: 0.1s ease-in;
+    }
+}
+
+#rcm_status {
+    --statusColor: 34, 122, 255;
+    background: rgba(var(--statusColor), 0.25);
+    color: rgb(var(--statusColor));
+    text-align: center;
+    width: 75px;
+    height: 26px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left: rgb(var(--statusColor)) solid 2px;
+    transition: 0.3s ease;
+    margin-top: 4px;
+    display: inline;
+    float: left;
+    >span {
+        line-height: 26px;
+        &:before {
+            content: "?";
+        }
+    }
+}
+
+[rcm_detected] #rcm_status {
+    --statusColor: 34, 255, 194;
+    transition: 0.3s ease;
+    >span:before {
+        content: "✔";
+    }
+}
+
+[rcm_undetected] #rcm_status {
+    --statusColor: 255, 34, 34;
+    transition: 0.3s ease;
+    >span:before {
+        content: "✖";
+    }
+}
