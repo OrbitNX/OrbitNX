@@ -114,14 +114,18 @@ jobs:
               with:
                   name: OrbitNX-linux
                   path: linux
+            - uses: actions/download-artifact@v2
+              with:
+                  name: OrbitNX-mac
+                  path: mac
             - name: ls
               run: ls
             - name: Delete unwanted directories
-              run: rm -rf {linux,windows}/*/
-                   rm -rf {linux,windows}/.icon*
-                   rm -rf {linux,windows}/builder-debug.yml
+              run: rm -rf {linux,windows,mac}/*/
+                   rm -rf {linux,windows,mac}/.icon*
+                   rm -rf {linux,windows,mac}/builder-debug.yml
             - name: ls dirs
-              run: ls linux && ls windows 
+              run: ls linux && ls windows && ls mac
             - name: Get some values needed for the release
               id: vars
               shell: bash
@@ -167,6 +171,16 @@ jobs:
                       release_id: release.data.id,
                       name: file,
                       data: await fs.readFile(`./windows/${file}`)
+                    });    
+                  }
+                  for (let file of await fs.readdir('mac')) {
+                    // do whatever filtering you want here, I'm just uploading all the files
+                    console.log('uploading', file);
+                    await github.repos.uploadReleaseAsset({
+                      owner, repo,
+                      release_id: release.data.id,
+                      name: file,
+                      data: await fs.readFile(`./mac/${file}`)
                     });    
                   }
               env:
