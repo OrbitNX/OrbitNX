@@ -46,3 +46,6 @@ The built program should be in the ``/dist`` directory
 [node-usb/node-usb](https://www.npmjs.com/package/usb) | MIT License
 
 [chalk/chalk-cli](https://www.npmjs.com/package/chalk-cli) | MIT License
+
+### Programs used for development 
+[Live Sass Compiler (VS Code Extension)](https://github.com/glenn2223/vscode-live-sass-compiler) | MIT License
