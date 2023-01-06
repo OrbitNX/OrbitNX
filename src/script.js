@@ -10,13 +10,15 @@ window.onload = () => {
     $('a').attr('draggable', 'false');
     var buildStage = () => {
         if (orbit.buildStage() !== ("stable" || "release")) {
-            return `(${capitalize(orbit.buildStage())}) `;
+            return `${capitalize(orbit.buildStage())} `;
         } else {
             return ""
         }
     }
     
-    document.getElementById("logoNav").setAttribute("title", `OrbitNX ${buildStage() + orbit.version()}`);
+    if (orbit.buildStage() !== null) {
+        document.getElementById("versionInfo").innerHTML = `<span>${buildStage() + orbit.version()}</span>`;
+    }
 }
 $('a[href]').click(() => {
     var url = $(this).attr('href');

@@ -24,6 +24,7 @@ html, body {
 }
 
 #nav {
+    overflow: hidden;
     display: block;
     width: max-content;
     height: 100vh;
@@ -63,6 +64,14 @@ html, body {
                 transition: 0.2s;
             }
         }
+    }
+    #versionInfo {
+        color:#3d3d3d;
+        font-size: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 4px;
     }
 }
 
@@ -127,6 +136,9 @@ select#payload_select {
     text-align: right;
     padding: 2px;
     width: 100px;
+    option {
+        text-align: center;
+    }
     &:hover {
         background: #4d4d4d;
         transition: 0.1s ease-in;
