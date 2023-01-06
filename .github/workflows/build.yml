@@ -1,9 +1,6 @@
 # Stole from ArmCord repo >:)
 name: Release build
-on: 
-  push:
-    branches:
-      - stable
+on: workflow_dispatch
 
 env:
   FORCE_COLOR: true
