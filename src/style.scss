@@ -33,6 +33,7 @@ html, body {
     float:left;
     #logoNav {
         text-align: center;
+        transform: translateY(2px);
     }
     >ul {
         margin: 0;
@@ -41,11 +42,12 @@ html, body {
         >li {
             #funnyLine {
                 border-bottom: 2px solid #ffffff35;
-                width: 85px;
+                width: 75px;
                 height: 38px;
-                transform: translateX(-4px);
+                transform: translateX(-5px);
                 margin-top: 4px;
                 margin-bottom: 10px;
+                margin-left: 10px;
                 display: block;
             }
             > a {

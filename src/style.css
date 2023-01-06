@@ -38,6 +38,7 @@ html, body {
 }
 #nav #logoNav {
   text-align: center;
+  transform: translateY(2px);
 }
 #nav > ul {
   margin: 0;
@@ -46,11 +47,12 @@ html, body {
 }
 #nav > ul > li #funnyLine {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2078431373);
-  width: 85px;
+  width: 75px;
   height: 38px;
-  transform: translateX(-4px);
+  transform: translateX(-5px);
   margin-top: 4px;
   margin-bottom: 10px;
+  margin-left: 10px;
   display: block;
 }
 #nav > ul > li > a {
