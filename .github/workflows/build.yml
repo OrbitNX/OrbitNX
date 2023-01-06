@@ -38,6 +38,40 @@ jobs:
                   name: OrbitNX-linux
                   path: dist/
 
+    build-mac:
+        runs-on: macos-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Use Node.js 18
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 18
+
+            - name: Install Node dependencies
+              run: npm install
+
+            - name: Install Electron-Builder
+              run: npm install -g electron-builder
+
+            - name: Build
+              run: electron-builder --macos zip
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: List all files in the dist directory
+              run: ls -l dist
+            - name: Delete unpacked builds
+              run: rm -rf dist/macos-unpacked
+
+            - name: Upload artifact
+              uses: actions/upload-artifact@v2
+              with:
+                  name: OrbitNX-mac
+                  path: dist/
+
+
     build-windows:
         runs-on: windows-latest
         steps:
