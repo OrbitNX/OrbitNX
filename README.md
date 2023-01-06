@@ -22,7 +22,7 @@ The built program should be in the ``/dist`` directory
 
 ## Project Resources
 
-### Featured Payloads
+### Featured payloads
 
 [Guillem96/argon-nx](https://github.com/Guillem96/argon-nx) | GPL-2.0 License
 
