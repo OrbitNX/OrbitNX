@@ -7,4 +7,4 @@ Add more customization and config options (10%) | ***[ Goal ]***
 
 Update Availability check via JSON and JavaScript | ***[ Idea ]***
 
-~~Do best to be Cross-Platform (MacOS / Windows / Linux) | ***[ Reconsiderin]*~~
+~~Do best to be Cross-Platform (MacOS / Windows / Linux) | ***[ Reconsidering ]***~~
