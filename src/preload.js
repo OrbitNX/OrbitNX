@@ -24,7 +24,8 @@ function injectNXPL(dir, payload, sDrive) {
     }
 
 }
-var RCM_STATUS = "Undetected";
+var RCM_STATUS = "NO";
+var RCM_STATE = undefined;
 var notifState = 0;
 var rcmHasBeenConnected = false;
 
@@ -33,7 +34,8 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(async () => {
         const device = await findByIds(0x0955, 0x7321);
         if (device) {
-            RCM_STATUS = "Detected";
+            RCM_STATUS = "YES";
+            RCM_STATE = findByIds(0x0955, 0x7321);
             document.body.setAttribute("rcm_detected", "");
             document.body.removeAttribute("rcm_undetected");
             if (notifState == 1) {
@@ -42,7 +44,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 rcmHasBeenConnected = true;
             };
         } else if (!device) {
-            RCM_STATUS = "Undetected";
+            RCM_STATUS = "NO";
+            RCM_STATE = undefined;
             document.body.setAttribute("rcm_undetected", "");
             document.body.removeAttribute("rcm_detected");
             if ((notifState == 0) && (rcmHasBeenConnected == true)) {
@@ -208,7 +211,32 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 contextBridge.exposeInMainWorld("orbit", {
+    log: (input, type) => {
+            let color;
+            let infoLog = undefined;
+            if (type == "warn") {
+                color = "#e8b300";
+            } else if (type == "err") {
+                color = "#eb3941";
+            } else {
+                color = "#eeeeee";
+            }
+            console.log(`%cOrbit%cNX%c${input}`, `font-style: italic; color: #eee8;`, `font-style: italic; color: #22ffc288; border-right: 1px solid #eee3; padding-right: 5px`, `margin-left: 5px; color: ${color}; ${infoLog}`, ""); 
+    },
     version: () => require("../package.json").version,
     buildStage: () => require("../package.json").buildStage,
-    rcmStatus: () => RCM_STATUS
+    rcmStatus: () => {
+        if (RCM_STATUS == "YES") {
+            return `DETECTED`
+        } else if (RCM_STATUS == "NO") {
+            return `UNDETECTED`
+        }
+    },
+    rcmStatusLog: () => {
+        if (RCM_STATUS == "YES") {
+            orbit.log(`Device Detected at Port ${RCM_STATE}`);
+        } else if (RCM_STATUS == "NO") {
+            orbit.log(`Device Not Detected`);
+        }
+    }
 });

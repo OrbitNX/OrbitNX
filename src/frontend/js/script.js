@@ -8,6 +8,9 @@ const capitalize = str => {
 window.onload = () => {
     $('#main').addClass('page-load');
     $('a').attr('draggable', 'false');
+    setTimeout(() => {
+        $('#nav').removeClass('noClick');
+    }, 800);
     var buildStage = () => {
         if (orbit.buildStage() !== ("stable" || "release")) {
             return `${capitalize(orbit.buildStage())} `;

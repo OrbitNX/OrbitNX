@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body {
-  background: #2d2d2d;
+  background: #1d1d1d;
   color: #fff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -11,6 +11,8 @@ html, body {
 }
 
 #main {
+  height: 100vh;
+  background: #2d2d2d;
   display: block;
   overflow: hidden;
 }
@@ -21,8 +23,9 @@ html, body {
 .selectedTab > a {
   color: #22ffc2 !important;
   border-left: 2px solid #22ffc2 !important;
-  cursor: default;
+  cursor: default !important;
   transition: 0.5s;
+  padding-left: 2px;
 }
 
 #nav {
@@ -32,7 +35,6 @@ html, body {
   width: -moz-max-content;
   width: max-content;
   height: 100vh;
-  background-color: #1d1d1d;
   white-space: nowrap;
   float: left;
 }
@@ -125,6 +127,7 @@ button#payload_inject {
   border-radius: 4px;
   padding: 2px;
   width: 65px;
+  cursor: pointer;
 }
 
 button#payload_config {
@@ -188,4 +191,8 @@ select#payload_select:hover {
 }
 [rcm_undetected] #rcm_status > span:before {
   content: "✖";
+}
+
+.noClick {
+  pointer-events: none;
 }/*# sourceMappingURL=style.css.map */
