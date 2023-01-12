@@ -1,4 +1,4 @@
-<h2 align="center">THIS IS A HEAVY WIP | MAKE SURE PYTHON 3 IS INSTALLED</h2>
+<h3 align="center">This is a HEAVY wip // Make sure Python 3 is installed // Tested on Python 3.8 - 3.10</h3>
 </br>
 <p align="center">
 <a href="#">
