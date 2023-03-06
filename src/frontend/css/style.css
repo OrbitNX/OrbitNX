@@ -1,18 +1,59 @@
 @charset "UTF-8";
+[theme=dark] {
+  --mainColor: #22ffc2;
+  --mainColorHover: #7bffda;
+  --mainColorHoverAlt: #1fb389;
+  --navBar: #1d1d1d;
+  --navBarTabTextColor: #fff;
+  --navBarTabHoverColor: #1fb389;
+  --navBarSeperator: #ffffff35;
+  --navBarVNum: #3d3d3d;
+  --rcmStatusIdle: 34, 122, 255;
+  --rcmStatusOK: 34, 255, 194;
+  --rcmStatusNO: 255, 34, 34;
+  --buttonTextColor: #fff;
+  --buttonColor: #3d3d3d;
+  --buttonColor: #4d4d4d;
+  --dropdownColor: #3d3d3d;
+  --dropdownHoverColor: #4d4d4d;
+  --primaryBgColor: #2d2d2d;
+  --primaryTextColor: #fff;
+}
+
+[theme=light] {
+  --mainColor: #1fb389;
+  --mainColorHover: #7bffda;
+  --mainColorHoverAlt: #22ffc2;
+  --navBar: #d9d9d9;
+  --navBarTabTextColor: #000;
+  --navBarTabHoverColor: #188b6a;
+  --navBarSeperator: #00000035;
+  --navBarVNum: #a4a4a4;
+  --rcmStatusIdle: 34, 122, 255;
+  --rcmStatusOK: 34, 255, 194;
+  --rcmStatusNO: 255, 34, 34;
+  --buttonTextColor: #000;
+  --buttonColor: #d9d9d9;
+  --buttonColor: #eeeeee;
+  --dropdownColor: #eeeeee;
+  --dropdownHoverColor: #d9d9d9;
+  --primaryBgColor: #a4a4a4;
+  --primaryTextColor: #000;
+}
+
 html, body {
-  background: #1d1d1d;
-  color: #fff;
+  background: var(--navBar);
+  color: var(--primaryTextColor);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
 #main {
   height: 100vh;
-  background: #2d2d2d;
+  background: var(--primaryBgColor);
   display: block;
   overflow: hidden;
 }
@@ -21,8 +62,8 @@ html, body {
 }
 
 .selectedTab > a {
-  color: #22ffc2 !important;
-  border-left: 2px solid #22ffc2 !important;
+  color: var(--mainColor) !important;
+  border-left: 2px solid var(--mainColor) !important;
   cursor: default !important;
   transition: 0.5s;
   padding-left: 2px;
@@ -31,7 +72,6 @@ html, body {
 #nav {
   overflow: hidden;
   display: block;
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 100vh;
@@ -41,6 +81,7 @@ html, body {
 #nav #logoNav {
   text-align: center;
   transform: translateY(2px);
+  transition: 0.5s;
 }
 #nav > ul {
   margin: 0;
@@ -48,7 +89,7 @@ html, body {
   list-style-type: none;
 }
 #nav > ul > li #funnyLine {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2078431373);
+  border-bottom: 2px solid var(--navBarSeperator);
   width: 75px;
   height: 38px;
   transform: translateX(-5px);
@@ -59,7 +100,7 @@ html, body {
 }
 #nav > ul > li > a {
   display: block;
-  color: #fff;
+  color: var(--navBarTabTextColor);
   text-decoration: none;
   text-align: left;
   padding: 1px 8px;
@@ -69,11 +110,11 @@ html, body {
   cursor: pointer;
 }
 #nav > ul > li:hover > a {
-  border-left: 2px solid rgba(34, 255, 192, 0.5019607843);
+  border-left: 2px solid var(--navBarTabHoverColor);
   transition: 0.2s;
 }
 #nav #versionInfo {
-  color: #3d3d3d;
+  color: var(--navBarVNum);
   font-size: 10px;
   position: absolute;
   bottom: 0;
@@ -82,8 +123,8 @@ html, body {
 }
 
 button {
-  background: #3d3d3d;
-  color: #fff;
+  background: var(--buttonColor);
+  color: var(--buttonTextColor);
   border-radius: 8px;
   border: none;
   outline: none;
@@ -91,29 +132,27 @@ button {
   transition: 0.1s ease-in;
 }
 button:hover {
-  background: #4d4d4d;
+  background: var(--buttonColorHover);
   transition: 0.1s ease-in;
 }
 
 a {
-  color: #22ffc2;
+  color: var(--mainColor);
   transition: 0.2s ease;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 a:hover {
-  color: #1fb389;
+  color: var(--mainColorHoverAlt);
   transition: 0.2s ease;
 }
 a:active {
-  color: #7bffda;
+  color: var(--mainColorHover);
   transition: 0.2s ease;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 [rcm_detected] button#payload_inject:active {
-  background: #22ffc2;
+  background: var(--mainColor);
   color: #2d2d2d;
 }
 
@@ -136,9 +175,9 @@ button#payload_config {
   width: 116px;
 }
 
-select#payload_select {
-  background: #3d3d3d;
-  color: #fff;
+select {
+  background: var(--dropdownColor);
+  color: var(--buttonTextColor);
   border-radius: 4px;
   border: none;
   outline: none;
@@ -147,16 +186,19 @@ select#payload_select {
   padding: 2px;
   width: 100px;
 }
-select#payload_select option {
+select#themeSel {
+  width: 116px;
+}
+select option {
   text-align: center;
 }
-select#payload_select:hover {
-  background: #4d4d4d;
+select:hover {
+  background: var(--dropdownHoverColor);
   transition: 0.1s ease-in;
 }
 
 #rcm_status {
-  --statusColor: 34, 122, 255;
+  --statusColor: var(--rcmStatusIdle);
   background: rgba(var(--statusColor), 0.25);
   color: rgb(var(--statusColor));
   text-align: center;
@@ -178,7 +220,7 @@ select#payload_select:hover {
 }
 
 [rcm_detected] #rcm_status {
-  --statusColor: 34, 255, 194;
+  --statusColor: var(--rcmStatusOK);
   transition: 0.3s ease;
 }
 [rcm_detected] #rcm_status > span:before {
@@ -186,7 +228,7 @@ select#payload_select:hover {
 }
 
 [rcm_undetected] #rcm_status {
-  --statusColor: 255, 34, 34;
+  --statusColor: var(--rcmStatusNO);
   transition: 0.3s ease;
 }
 [rcm_undetected] #rcm_status > span:before {

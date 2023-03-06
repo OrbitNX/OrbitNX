@@ -6,7 +6,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     minWidth: 500,
-    maxWidth: 1200,
+    minHeight: 400,
     autoHideMenuBar: true,
     backgroundColor: "#2d2d2d",
     title: "OrbitNX",

@@ -11,7 +11,7 @@
   <div id="nav" class="noClick">
     <ul>
       <div id="logoNav">
-        <img width="50px" draggable="false" src="./assets/iconLogo.png" />
+        <img id="logoNavImg" width="50px" draggable="false" src="./assets/iconLogo-dark.png" />
       </div>
       <li></li>
       <div id="rcm_status">
@@ -29,7 +29,11 @@
   </div>
   <div id="main">
     <div id="content">
-      <p>Placeholder</p>
+      <select id="themeSel">
+        <option value="dark">Dark Space</option>
+        <option value="light">Eclipse</option>
+      </select>
+      <button id="themeSet">Set!</button>
     </div>
   </div>
   <script src="./js/jquery-3.6.0.min.js"></script>
