@@ -33,7 +33,7 @@ The built program should be in the ``/dist`` directory
 [shchmue/Lockpick_RCM](https://github.com/shchmue/Lockpick_RCM) | GPL-2.0 License (Mentioned, but not included)
 
 ### Code and functionality 
-[Electron Framework](https://electronjs.org) | MIT License
+[Electron.JS](https://electronjs.org) | MIT License
 
 [Electron-Builder](https://electron.build) | MIT License
 
