@@ -1,10 +1,10 @@
 const capitalize = str => {
     if (typeof str === 'string') {
-      return str.replace(/^\w/, c => c.toUpperCase())
+        return str.replace(/^\w/, c => c.toUpperCase())
     } else {
-      return ''
+        return ''
     }
-  }
+}
 window.onload = () => {
     $('#main').addClass('page-load');
     $('a').attr('draggable', 'false');
@@ -24,13 +24,13 @@ window.onload = () => {
 }
 $('a[href]').click(() => {
     var url = $(this).attr('href');
-        $('#main').removeClass('page-load');
-        $('body').persist('attribute', 'rcm_undetected');
-        $('body').persist('attribute', 'rcm_detected');
-        $('#main').addClass('page-unload');
-        setTimeout(() => {
-            window.location.href = url;
-        }, 800);
+    $('#main').removeClass('page-load');
+    $('body').persist('attribute', 'rcm_undetected');
+    $('body').persist('attribute', 'rcm_detected');
+    $('#main').addClass('page-unload');
+    setTimeout(() => {
+        window.location.href = url;
+    }, 800);
 });
 
 document.body.setAttribute("theme", localStorage.getItem("orbitTheme"));

@@ -192,6 +192,14 @@ select#themeSel {
 select option {
   text-align: center;
 }
+select option::-moz-selection {
+  background-color: var(--mainColor) !important;
+  color: #fff !important;
+}
+select option::selection {
+  background-color: var(--mainColor) !important;
+  color: #fff !important;
+}
 select:hover {
   background: var(--dropdownHoverColor);
   transition: 0.1s ease-in;

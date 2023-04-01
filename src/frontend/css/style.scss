@@ -189,6 +189,10 @@ select {
     }
     option {
         text-align: center;
+        &::selection {
+            background-color: var(--mainColor) !important;
+            color: #fff !important;
+        }
     }
     &:hover {
         background: var(--dropdownHoverColor);
