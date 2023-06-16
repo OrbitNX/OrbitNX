@@ -1,3 +1,7 @@
+<h1 align="center">ARCHIVED</h1>
+<h3 align="center">If you want something easy to use, try the <a href="https://github.com/kingkundo/super-payload-launcher">Super Payload Injector</a></h3>
+<h1></h1>
+
 <h3 align="center">This is a HEAVY WiP // Make sure Python 3 is installed // Tested on Python 3.8 - 3.10</h3>
 </br>
 <p align="center">
